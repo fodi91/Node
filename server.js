@@ -5,8 +5,8 @@ app.set("view engine", "ejs");
 app.get("/", (reg, res) => {
   console.log("I am here");
   //res.json({ message: "error" });
-  //res.download("server.js");
-  res.render("index", { text: "world" });
+  res.download("server.js");
+  //res.render("index", { text: "world" });
 });
 
 app.get("/users", (req, res) => {
