@@ -9,8 +9,8 @@ app.get("/", (reg, res) => {
   //res.render("index", { text: "world" });
 });
 
-app.get("/users", (req, res) => {
-  res.send("user list");
+app.post("/users", (req, res) => {
+  res.send(req.body.value);
 });
 app.get("/users/new", (req, res) => {
   res.send("user form");
